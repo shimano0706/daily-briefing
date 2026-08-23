@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Daily Briefing</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Briefing">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F2F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171C" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --paper:#F2F3EF; --card:#FAFAF8; --ink:#1B2430; --ink-2:#3A4048;
+    --muted:#71756B; --rule:#DCDDD3; --bar:rgba(242,243,239,.86);
+    --accent:#26399B; --accent-soft:rgba(38,57,155,.09);
+    --display:"Hiragino Mincho ProN","Yu Mincho",serif;
+    --body:-apple-system,"Hiragino Sans","Yu Gothic",sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+    --safe-b:env(safe-area-inset-bottom,0px);
+    --safe-t:env(safe-area-inset-top,0px);
+  }
+  body[data-slot="am"] {--accent:#26399B;--accent-soft:rgba(38,57,155,.09);}
+  body[data-slot="mid"]{--accent:#8C6110;--accent-soft:rgba(140,97,16,.11);}
+  body[data-slot="pm"] {--accent:#AD4E17;--accent-soft:rgba(173,78,23,.10);}
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#14171C; --card:#1B1F26; --ink:#ECEAE3; --ink-2:#C6C8C2;
+      --muted:#8B8F87; --rule:#2C313A; --bar:rgba(20,23,28,.86);
+    }
+    body[data-slot="am"] {--accent:#8CA0F5;--accent-soft:rgba(140,160,245,.13);}
+    body[data-slot="mid"]{--accent:#E0AC4C;--accent-soft:rgba(224,172,76,.13);}
+    body[data-slot="pm"] {--accent:#EE8B52;--accent-soft:rgba(238,139,82,.13);}
+  }
+
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--body);font-size:17px;line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    padding:0 0 calc(96px + var(--safe-b));
+    overscroll-behavior-y:contain;
+  }
+  .pad{padding-left:20px;padding-right:20px;}
+
+  /* ---- sticky header ---- */
+  .top{
+    position:sticky;top:0;z-index:20;
+    padding-top:calc(10px + var(--safe-t));padding-bottom:10px;
+    background:var(--bar);
+    -webkit-backdrop-filter:saturate(180%) blur(14px);
+    backdrop-filter:saturate(180%) blur(14px);
+    border-bottom:1px solid var(--rule);
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .stamp{font-family:var(--mono);font-size:13px;letter-spacing:.02em;
+         color:var(--muted);font-variant-numeric:tabular-nums;}
+  .stamp b{color:var(--ink);font-weight:600;}
+  .live{
+    display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:var(--accent);margin-right:7px;vertical-align:1px;
+  }
+  .now-btn{
+    font:inherit;font-size:13px;background:none;border:none;padding:8px 0 8px 12px;
+    color:var(--muted);text-decoration:underline;text-underline-offset:3px;
+  }
+  .now-btn:disabled{opacity:.35;text-decoration:none;}
+
+  /* ---- day chips ---- */
+  .days{display:flex;gap:6px;padding-top:14px;}
+  .days button{
+    flex:1;min-height:38px;font:inherit;font-size:15px;
+    background:transparent;color:var(--muted);
+    border:1px solid var(--rule);border-radius:9px;
+  }
+  .days button[aria-pressed="true"]{
+    background:var(--accent);border-color:var(--accent);color:var(--paper);font-weight:700;
+  }
+
+  /* ---- week curve ---- */
+  .curve{margin-top:16px;}
+  .curve svg{display:block;width:100%;height:auto;overflow:visible;}
+  .track{fill:none;stroke:var(--rule);stroke-width:1.5;}
+  .wave{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+  .wave-fill{fill:var(--accent-soft);stroke:none;}
+  .now-dot{fill:var(--paper);stroke:var(--accent);stroke-width:5;}
+  .cap{font-size:11.5px;color:var(--muted);margin-top:6px;letter-spacing:.02em;}
+
+  /* ---- headline ---- */
+  .eyebrow{
+    display:flex;align-items:center;gap:9px;margin:26px 0 8px;
+    font-size:11px;letter-spacing:.14em;color:var(--accent);font-weight:700;
+  }
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--rule);}
+  h1{font-family:var(--display);font-size:31px;line-height:1.34;font-weight:600;
+     margin:0 0 6px;letter-spacing:.01em;}
+  .role{font-size:13.5px;color:var(--muted);margin:0;letter-spacing:.02em;}
+
+  .q{
+    margin:22px 0 0;padding:17px 18px;border-radius:12px;
+    background:var(--card);border-left:3px solid var(--accent);
+  }
+  .q span{display:block;font-size:10.5px;letter-spacing:.16em;color:var(--muted);margin-bottom:7px;}
+  .q p{margin:0;font-family:var(--display);font-size:19px;line-height:1.62;font-weight:600;}
+
+  h2{font-size:10.5px;letter-spacing:.16em;color:var(--muted);font-weight:700;
+     margin:32px 0 2px;}
+
+  ul{list-style:none;margin:0;padding:0;}
+  .acts li{
+    position:relative;padding:15px 0 15px 26px;border-top:1px solid var(--rule);
+    font-size:16px;line-height:1.68;
+  }
+  .acts li:last-child{border-bottom:1px solid var(--rule);}
+  .acts li::before{content:"";position:absolute;left:2px;top:26px;
+                   width:10px;height:2px;background:var(--accent);border-radius:1px;}
+  .src{display:inline-block;margin-left:6px;font-family:var(--mono);font-size:10.5px;
+       color:var(--muted);white-space:nowrap;}
+
+  .pool li{
+    position:relative;padding:14px 0 14px 30px;border-top:1px solid var(--rule);
+    font-size:15px;line-height:1.66;color:var(--ink-2);
+  }
+  .pool li:last-child{border-bottom:1px solid var(--rule);}
+  .pool .no{position:absolute;left:0;top:15px;font-family:var(--mono);
+            font-size:10.5px;color:var(--muted);}
+  .redraw{
+    display:block;width:100%;min-height:44px;margin-top:14px;
+    font:inherit;font-size:14px;color:var(--muted);
+    background:transparent;border:1px dashed var(--rule);border-radius:10px;
+  }
+  .redraw:active{background:var(--accent-soft);color:var(--accent);}
+
+  .closing{margin:26px 0 0;font-family:var(--display);font-size:14.5px;
+           color:var(--muted);line-height:1.8;}
+
+  .weekend{
+    margin:26px 0 0;padding:18px;border-radius:12px;
+    background:var(--card);border:1px solid var(--rule);
+    font-size:15px;color:var(--muted);
+  }
+
+  .credit{margin:34px 0 0;padding-top:18px;border-top:1px solid var(--rule);
+          font-size:11.5px;color:var(--muted);line-height:1.9;}
+
+  /* ---- fixed bottom slot bar ---- */
+  .slots{
+    position:fixed;left:0;right:0;bottom:0;z-index:30;
+    display:flex;gap:8px;
+    padding:10px 16px calc(10px + var(--safe-b));
+    background:var(--bar);
+    -webkit-backdrop-filter:saturate(180%) blur(16px);
+    backdrop-filter:saturate(180%) blur(16px);
+    border-top:1px solid var(--rule);
+  }
+  .slots button{
+    flex:1;min-height:52px;font:inherit;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+    background:transparent;color:var(--muted);
+    border:1px solid var(--rule);border-radius:12px;
+  }
+  .slots button .hh{font-family:var(--mono);font-size:15px;font-weight:600;
+                    font-variant-numeric:tabular-nums;}
+  .slots button .lb{font-size:10.5px;letter-spacing:.06em;}
+  .slots button[aria-pressed="true"]{
+    background:var(--accent);border-color:var(--accent);color:var(--paper);
+  }
+  @media (prefers-color-scheme: dark){
+    .days button[aria-pressed="true"],.slots button[aria-pressed="true"]{color:#12151A;}
+  }
+
+  @media (min-width:520px){
+    .pad{max-width:600px;margin:0 auto;}
+    .slots{justify-content:center;}
+    .slots button{max-width:180px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body data-slot="am">
+
+<div class="top pad">
+  <div class="stamp"><span class="live"></span><b id="d-date">—</b> <span id="d-time"></span></div>
+  <button class="now-btn" id="reset" disabled>いまに戻す</button>
+</div>
+
+<div class="pad">
+  <nav class="days" id="days" aria-label="曜日">
+    <button data-day="1">月</button><button data-day="2">火</button>
+    <button data-day="3">水</button><button data-day="4">木</button>
+    <button data-day="5">金</button>
+  </nav>
+
+  <div class="curve">
+    <svg viewBox="0 0 340 92" role="img" aria-label="1週間の負荷カーブ">
+      <line class="track" x1="14" y1="76" x2="326" y2="76"/>
+      <path id="wfill" class="wave-fill" d=""/>
+      <path id="wline" class="wave" d=""/>
+      <circle id="wdot" class="now-dot" r="7" style="display:none"/>
+    </svg>
+    <div class="cap">月 7割 ／ 火・水 ピーク ／ 木 テーパリング ／ 金 クロージング</div>
+  </div>
+
+  <main id="panel">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <p class="role" id="role"></p>
+
+    <div class="q"><span>今日の問い</span><p id="question"></p></div>
+
+    <h2>今日の行動</h2>
+    <ul class="acts" id="acts"></ul>
+
+    <h2>今日思い出す3つの原則</h2>
+    <ul class="pool" id="pool"></ul>
+    <button class="redraw" id="redraw">別の3件を引く</button>
+
+    <p class="closing" id="closing"></p>
+  </main>
+
+  <div class="weekend" id="weekend" hidden>
+    今日は土日です．平日に試した内容を振り返り，来週のビッグテーマを1つ決める時間に．下のボタンで平日の内容も読めます．
+  </div>
+
+  <p class="credit">
+    『一流が平日の夜に必ずすること，絶対しないこと』第1章〜第3章の読書メモより．<br>
+    通信・生成処理なし．端末内だけで動作します．
+  </p>
+</div>
+
+<nav class="slots" id="slots" aria-label="時間帯">
+  <button data-slot="am"><span class="hh">7:00</span><span class="lb">設計</span></button>
+  <button data-slot="mid"><span class="hh">16:00</span><span class="lb">減速</span></button>
+  <button data-slot="pm"><span class="hh">18:00</span><span class="lb">締め</span></button>
+</nav>
+
+<script>
+const DAYS=["","月","火","水","木","金"];
+const LOAD={1:.70,2:1,3:1,4:.75,5:.48};
+const TIME={am:"07:00",mid:"16:00",pm:"18:00"};
+const OFF={am:0,mid:1,pm:2};
+
+const DATA={
+"1am":{e:"MONDAY ・ WARM-UP",t:"7割で始める",r:"ウォームアップ ── 今週の設計図を開く",
+ q:"今週，何を試す？（What are you gonna try this week?）",
+ a:[["最初の行動をスマホのメール確認にしない．「今日最も大切なことは何か」の確認から始める．","p94–101"],
+    ["今日の予定は全体の7割で組む．脳と体が仕事モードに戻るには時間がいるし，不測の事態にも対応できる．","p102–110"],
+    ["今週のビッグテーマを1つだけ言葉にする．判定基準は「できていなかった時，来週の自分が困るかどうか」．","p102–110"]],
+ c:"完璧主義を手放す．月曜は，走り出せていれば十分．"},
+"1mid":{e:"MONDAY ・ SLOWING DOWN",t:"ここで速度を落とす",r:"ペースダウン ── 仕上げと整理へ",
+ q:"今週のビッグテーマに，今日どれだけ近づいた？",
+ a:[["15分の Quiet time：今日起きたこと（進歩）／明日の予定／明日の一番大きな仕事．","p102–110"],
+    ["7割まで来たものは，そこで区切る．残り3割は明朝の新鮮な視点に回す．","p37–40"],
+    ["明日の最初の一手を決め，あえて途中まで手をつけておく．","p22–32"]],
+ c:"帰る前に整理しておくと，帰宅後に仕事が頭から離れない状態を避けられる．"},
+"1pm":{e:"MONDAY ・ CLOSING THE DAY",t:"動き出せていれば十分",r:"締めくくり ── 完璧主義を手放す",
+ q:"今日，走り出せた？",
+ a:[["月曜は動き出せていれば十分．完了度で自分を採点しない．","p102–110"],
+    ["夜に何をするかを決めてから終える．「なんとなく過ごす」と DMN が不安を増幅させる．","p52–56"],
+    ["「今日もいい日だった」と確信してから眠りにつく．","p52–56"]],
+ c:"睡眠の質が落ちると，翌朝の目覚めもモチベーションも下がる．"},
+"2am":{e:"TUESDAY ・ PEAK ZONE",t:"午前を明け渡さない",r:"ピークゾーン初日 ── 最も高いパフォーマンスを",
+ q:"午前中の2時間，何を遮断する？",
+ a:[["午前を Deep Work に充てる．外部の割り込みを物理的に遮断してから始める．","p102–110"],
+    ["昨日途中で止めた仕事から入る．作業の流れが頭に残っているうちが速い．","p22–32"],
+    ["終業時刻を先に固定し，そこから逆算して今日の工程を割り出す．","p37–40"]],
+ c:"緊急度だけが高いタスクは，多忙感を生むが満足感は残さない．"},
+"2mid":{e:"TUESDAY ・ SLOWING DOWN",t:"新規着手をやめる",r:"ペースダウン ── 仕上げと整理へ",
+ q:"今日のピークは，本当に重要なことに使えた？",
+ a:[["ここからは新規着手をやめ，仕上げと整理に切り替える．","p102–110"],
+    ["15分の Quiet time：今日の進歩／明日の予定／明日の一番大きな仕事．","p102–110"],
+    ["今日直面した課題を解決できそうな本／論文を1本，持ち帰る準備をする．","p74–78"]],
+ c:"抽象的な知識が「いま不可欠な情報」に変わるのは，課題に直面した日の夜だけ．"},
+"2pm":{e:"TUESDAY ・ CLOSING THE DAY",t:"判断を明日に預ける",r:"締めくくり ── 疲れた脳で決めない",
+ q:"いま決めようとしている件は，明日の自分に任せられない？",
+ a:[["疲れた脳で導き出した答えが，翌朝の澄んだ頭で考えた結論に勝ることはない．迷いは紙に書き出して切り離す．","p57–63"],
+    ["「今日終わらなければ明日やる」と切り替える．夜に考えすぎると翌朝の判断力が落ちる．","p33–36"],
+    ["持ち帰った1本を読む．「学ぶ」で終えず「どう活用するか」まで考える．","p74–78"]],
+ c:"体験を，経験に変えて終える．"},
+"3am":{e:"WEDNESDAY ・ COURSE CORRECTION",t:"進路を測り直す",r:"ピークゾーン／軌道修正 ── 週の折り返し",
+ q:"月曜に決めたテーマ，まだ真ん中にある？",
+ a:[["今週のビッグテーマとの距離を測り，残り3日の配分を組み直す．","p86–93"],
+    ["今日も午前は Deep Work．重要度が低く緊急度だけ高いタスクは午後に寄せる．","p94–101"],
+    ["「多忙感はあるが満足感がない」と感じたら，目標と無関係なゾーンに入っているサイン．","p94–101"]],
+ c:"1週間は，成長の波を生み出すための1つの実験単位．"},
+"3mid":{e:"WEDNESDAY ・ SLOWING DOWN",t:"着地点を決める",r:"ペースダウン ── 木曜以降の輪郭を描く",
+ q:"明日から，何を仕上げにいく？",
+ a:[["木曜以降はテーパリング．ここから広げず，着地させる範囲を今決める．","p102–110"],
+    ["15分の Quiet time：今日の進歩／明日の予定／明日の一番大きな仕事．","p102–110"],
+    ["金曜16時以降が空くよう，前倒しできるタスクを探す．","p102–110"]],
+ c:"週の後半の余白は，水曜のうちにしか作れない．"},
+"3pm":{e:"WEDNESDAY ・ CLOSING THE DAY",t:"話して，確定させる",r:"締めくくり ── 自己効力感を回復する",
+ q:"今日うまくいったことを，誰に話す？",
+ a:[["夕食で今日うまくいったことや努力した過程を話題にする．自ら話すことで努力が揺るぎない実感に変わる．","p67–70"],
+    ["モヤモヤや懸念事項は，数分で紙に書き出してから終える．","p57–63"],
+    ["存在承認：相手が「今日そこにいた」という事実を肯定する言葉をかける．自分の自己効力感も上がる．","p71–73"]],
+ c:"人はポジティブよりネガティブに強く反応する．だから意識的に打ち消す．"},
+"4am":{e:"THURSDAY ・ TAPERING",t:"広げずに，仕上げる",r:"テーパリング ── 仕上げとスピード調整",
+ q:"金曜16時までに，何を閉じ切る？",
+ a:[["新しく広げるより，着地させる．残り2日で仕上げる範囲を今のうちに決める．","p102–110"],
+    ["出しきれていなかった3割を，朝の新鮮な視点で片付ける．","p37–40"],
+    ["負荷を上げる日ではなく整える日．スピードを調整する．","p102–110"]],
+ c:"テーパリングは手を抜くことではなく，着地の精度を上げること．"},
+"4mid":{e:"THURSDAY ・ SLOWING DOWN",t:"金曜の余白をつくる",r:"ペースダウン ── 明日を軽くする",
+ q:"明日の予定，16時以降が空いている？",
+ a:[["金曜のタスクを見直し，16時以降が空くように前倒しする．","p102–110"],
+    ["15分の Quiet time：今日の進歩／明日の予定／明日の一番大きな仕事．","p102–110"],
+    ["明日の最初の一手を決め，途中まで手をつけて帰る．","p22–32"]],
+ c:"金曜を穏やかに終えられるかは，木曜の夕方に決まる．"},
+"4pm":{e:"THURSDAY ・ CLOSING THE DAY",t:"経験と知識を結ぶ",r:"締めくくり ── 明日への活力に変える",
+ q:"今日の経験は，何と結びついた？",
+ a:[["「新たに知識やスキルを学ぶ」から「それをどう活用するか」へ．","p74–78"],
+    ["今週学んだことで来週から試せることを，1つメモしておく．","p74–78"],
+    ["一流と二流の差は，今日の経験から何を学ぶかを意識しているかどうか．","p74–78"]],
+ c:"読んだ内容が翌日の実務に直結すると，それが明日への活力になる．"},
+"5am":{e:"FRIDAY ・ CLOSING THE WEEK",t:"週を閉じにいく",r:"クロージング ── 週末につなぐ",
+ q:"今週，何が変わった？",
+ a:[["月曜の自分と比べて何が積み上がったかを，言葉にして確認する．","p86–93"],
+    ["16時以降は新しいタスクを受けない・始めない．そのつもりで午前の予定を組む．","p102–110"],
+    ["午前のうちに，閉じるべきものを閉じる．","p102–110"]],
+ c:"1週間の使い方が，人生そのものの使い方の縮図になる．"},
+"5mid":{e:"FRIDAY ・ THE LINE",t:"ここから先は受けない",r:"クロージング ── 最重要の分岐点",
+ q:"いま，新しいタスクを引き受けようとしていない？",
+ a:[["金曜16時以降は新しいタスクを受けない！　始めない！！","p102–110"],
+    ["ここから一足先に休息モードへ切り替える．心身の回復が早まる．","p102–110"],
+    ["1週間を振り返り，来週の優先事項を整理する余裕を確保する．","p102–110"]],
+ c:"ここで引き受けた1件が，土日の回復と月曜の始動を奪う．"},
+"5pm":{e:"FRIDAY ・ PEAK-END",t:"穏やかに終える",r:"ピーク・エンド ── 週の記憶が決まる時間",
+ q:"今週を「充実した5日間」と呼べる終わり方をしている？",
+ a:[["人は経験を「最も強烈な瞬間」と「終わり方」で記憶する．金曜の夜の状態が週全体の印象になる．","p102–110"],
+    ["ここで無理をすると土日が回復だけで終わり，月曜の始動が鈍る．今日は畳みにいく．","p102–110"],
+    ["来週のビッグテーマを1つだけ決める（週末までに）．","p102–110"]],
+ c:"疲労困憊なら「疲れた5日間」，穏やかなら「充実した5日間」．"}
+};
+
+const POOL=[
+"仕事ができる人ほど退社時間が早い．夜の時間を十分に確保でき，心身を効果的にリフレッシュできるから．｜p22–32",
+"世界のエグゼクティブが仕事を切り上げる目安は「17時」．｜p22–32",
+"早めに仕事を終えて休息をとる方が，翌日の生産性を最大限に高められる ──「戦略的中断」．｜p22–32",
+"世界のエリート層の72%は朝のうちに終業時刻を決めている．一般層は18%．｜p22–32",
+"すべての作業を完了させて退社すると，翌朝は「何をするか」を考えるところから始まり，朝の貴重な時間が削られる．｜p22–32",
+"「仕事が終わったら帰る」は，やがて「完了しなければ帰宅できない」に変質する．｜p33–36",
+"「仕事を終えてから帰る」という考え方こそが，生産性を削る要因になっている．｜p33–36",
+"朝に慢性的な疲労を感じていると，午前中の集中持続時間が短くなり，重要業務の処理速度が落ちる．｜p33–36",
+"残業時間が長い人は「今日中に終わらせること」に強いこだわりがある．｜p33–36",
+"パフォーマンスが高い人は「今日終わらなければ明日やる」と切り替える場面が多い．｜p33–36",
+"疲れている今の自分より，明日の自分の方が質の高い判断ができる．｜p33–36",
+"夜に考えすぎると，朝の判断力が落ちる．｜p33–36",
+"完璧な仕上がりを追求すると，作業時間が際限なく膨らみ，収拾がつかなくなる．｜p37–40",
+"7割の段階で意図的に区切りをつけ，残りの3割は翌朝の新鮮な視点で取り組む．｜p37–40",
+"退社時刻を固定し，そこから逆算して仕事の工程を割り出す．｜p37–40",
+"退社時刻を固定すると夜に予定を入れられ，自分の時間を「主体的に」生み出せる．｜p41–43",
+"仕事と無関係な活動に時間を費やす自分を責めない．周囲の評価や義務から距離を置くことは，回復のために不可欠．｜p44–50",
+"Third place の条件は「仕事との関わりが薄い」「日常的に通える」「他者からの評価から距離を置ける」．｜p44–50",
+"自宅に到着する前に気持ちを切り替えられれば，それで十分．｜p44–50",
+"「夜は疲れているから何も決めたくない」となんとなく過ごすと，DMN が活性化し，余計な思考が不安を増大させる．｜p52–56",
+"睡眠の質と翌朝の目覚めが悪くなると，仕事へのモチベーションも下がる．｜p52–56",
+"平日の夜の過ごし方を事前に決めておく．計画的に夜を過ごす必要がある．｜p52–56",
+"疲れた脳で導き出した答えが，翌朝の澄んだ頭で考えた結論に勝ることはない．｜p57–63",
+"夜に費やした思考の多くは，翌朝に見返すと大した価値がない．｜p57–63",
+"その日にあったこと・思いついたアイデア・日記を数行・明日やること．書くことで「体験」が「経験」に変わる．｜p57–63",
+"自己効力感とは，自分の能力や価値を肯定的に捉える感覚．「自分ならできる」「きっとうまくいく」．｜p64–66",
+"休日は自己効力感の「向上」，平日の夜は「回復」．目的が違う．｜p64–66",
+"人間はネガティブ・バイアスを持ち，ポジティブな出来事よりネガティブな事象に強く反応する．｜p64–66",
+"自ら話すことで，その日の努力が自分の中で「確定」する．｜p67–70",
+"成果承認は成果が出て初めて称賛される．存在承認は，今日そこにいたという事実を肯定する．｜p71–73",
+"他者への存在承認は，自分自身の自己効力感を高めることにつながる．｜p71–73",
+"一流と二流の差は頭の良さではなく，今日の経験から何を学ぶかを常に意識しているかどうかの差．｜p74–78",
+"「新たに知識やスキルを学ぶ」から「それをどう活用するか」へ．｜p74–78",
+"曜日ごとの役割を定めないと，月曜が終わった時点で「休みまであと4日」という消極的な思考に陥りやすい．｜p86–93",
+"1週間は耐えて乗り越える期間ではなく，成長の波を生み出すための1つの「実験単位」．｜p86–93",
+"1週間は単なる独立した5日間の集まりではなく，連続した5日間の成長単位．1年後に決定的な差が生まれる．｜p86–93",
+"1週間を設計できなければ1ヶ月も1年も設計できない．1週間の使い方は，人生そのものの使い方の縮図．｜p86–93",
+"朝一番で計画が狂うと，その後の遅れを取り戻すのが困難になる．｜p94–101",
+"重要度が低く緊急度だけが高いタスクは「今すぐやらないといけない」という錯覚を生む．多忙感はあるが満足感は得られない．｜p94–101"
+];
+const M=POOL.length;
+
+function pickPrinciples(dt,slot,shift){
+  const ymd=dt.getFullYear()*10000+(dt.getMonth()+1)*100+dt.getDate();
+  const N=ymd+OFF[slot]+(shift||0)*97;
+  const idx=[];
+  [0,13,26].forEach(k=>{let i=((N*7+k)%M+M)%M;while(idx.includes(i))i=(i+1)%M;idx.push(i);});
+  return idx;
+}
+
+/* curve geometry (mobile viewBox 340x92) */
+const X0=26,X1=314,Y0=76,AMP=58;
+const xOf=d=>X0+(X1-X0)*(d-1)/4, yOf=d=>Y0-AMP*LOAD[d];
+function drawCurve(active){
+  const pts=[1,2,3,4,5].map(d=>[xOf(d),yOf(d)]);
+  let p=`M ${pts[0][0]} ${pts[0][1]}`;
+  for(let i=0;i<4;i++){
+    const [x1,y1]=pts[i],[x2,y2]=pts[i+1],mx=(x1+x2)/2;
+    p+=` C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}`;
+  }
+  document.getElementById('wline').setAttribute('d',p);
+  document.getElementById('wfill').setAttribute('d',`${p} L ${X1} ${Y0} L ${X0} ${Y0} Z`);
+  const dot=document.getElementById('wdot');
+  if(active){dot.style.display='';dot.setAttribute('cx',xOf(active));dot.setAttribute('cy',yOf(active));}
+  else dot.style.display='none';
+}
+
+let cur={day:1,slot:'am'},shift=0,refDate=new Date(),manual=false;
+
+function renderPool(){
+  document.getElementById('pool').innerHTML=
+    pickPrinciples(refDate,cur.slot,shift).map(i=>{
+      const [t,s]=POOL[i].split('｜');
+      return `<li><span class="no">${String(i+1).padStart(2,'0')}</span>${t}<span class="src">${s}</span></li>`;
+    }).join('');
+}
+
+function render(day,slot){
+  cur={day,slot};shift=0;
+  document.body.dataset.slot=slot;
+  const e=DATA[day+slot];
+  document.getElementById('eyebrow').textContent=`${e.e} ・ ${TIME[slot]}`;
+  document.getElementById('title').textContent=e.t;
+  document.getElementById('role').textContent=e.r;
+  document.getElementById('question').textContent="「"+e.q+"」";
+  document.getElementById('acts').innerHTML=
+    e.a.map(x=>`<li>${x[0]}<span class="src">${x[1]}</span></li>`).join('');
+  document.getElementById('closing').textContent=e.c;
+  renderPool();drawCurve(day);
+  document.querySelectorAll('[data-day]').forEach(b=>
+    b.setAttribute('aria-pressed',String(+b.dataset.day===day)));
+  document.querySelectorAll('[data-slot]').forEach(b=>
+    b.setAttribute('aria-pressed',String(b.dataset.slot===slot)));
+  document.getElementById('reset').disabled=!manual;
+}
+
+function stamp(){
+  const n=new Date(),jp=["日","月","火","水","木","金","土"][n.getDay()];
+  document.getElementById('d-date').textContent=`${n.getMonth()+1}/${n.getDate()} (${jp})`;
+  document.getElementById('d-time').textContent=
+    `${String(n.getHours()).padStart(2,'0')}:${String(n.getMinutes()).padStart(2,'0')}`;
+}
+
+function now(){
+  manual=false;refDate=new Date();stamp();
+  const wd=refDate.getDay(),we=(wd===0||wd===6);
+  document.getElementById('weekend').hidden=!we;
+  document.getElementById('panel').hidden=we;
+  document.getElementById('reset').disabled=true;
+  if(we){drawCurve(0);return;}
+  const h=refDate.getHours();
+  render(wd,h<12?'am':(h<17?'mid':'pm'));
+}
+
+function pick(fn){
+  manual=true;
+  document.getElementById('weekend').hidden=true;
+  document.getElementById('panel').hidden=false;
+  fn();
+}
+document.querySelectorAll('[data-day]').forEach(b=>b.addEventListener('click',()=>
+  pick(()=>render(+b.dataset.day,cur.slot))));
+document.querySelectorAll('[data-slot]').forEach(b=>b.addEventListener('click',()=>
+  pick(()=>render(cur.day,b.dataset.slot))));
+document.getElementById('redraw').addEventListener('click',()=>{shift++;renderPool();});
+document.getElementById('reset').addEventListener('click',now);
+
+now();
+setInterval(stamp,20000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!manual)now();});
+</script>
+</body>
+</html>
